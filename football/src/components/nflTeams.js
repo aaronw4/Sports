@@ -1,15 +1,28 @@
 import React from 'react';
-import NFLteamPlayers from './nflTeamPlayers'
+import NFLteamPlayers from './nflTeamPlayers';
+import {Route, Link} from 'react-router-dom';
+import NFLteamPlayer from './nflPlayer'
 
 const NFLteams = props => {
     return(
         <div>
+            <Route exact path='/'>
             {props.teams.map(team => (
-                <div key={team.strTeamShort}>
-                    <p>{team.strTeam}: {team.idTeam}</p>
-                </div>
+                <Link to={`/team/${team.idTeam}`}  key={team.idTeam}>
+                    <div key={team.strTeamShort}>
+                        <p>{team.strTeam}: {team.idTeam}</p>
+                    </div>
+                </Link>
             ))}
-            <NFLteamPlayers/>
+            </Route>
+
+            <Route path='/team/:id'>               
+                <NFLteamPlayers/>                             
+            </Route>
+
+            <Route path='/player/:id'>
+                <NFLteamPlayer/>
+            </Route>
         </div>
     )
 }

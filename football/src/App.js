@@ -20,7 +20,6 @@ function App() {
   return (
     <div className="App">
       <NFLteams teams={teams}/>
-      {console.log(teams)}
     </div>
   );
 }
