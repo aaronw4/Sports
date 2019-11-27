@@ -25,6 +25,7 @@ body {
 }
 .teamBannerImg {
   width: 70vw;
+  height: auto;
   margin-top: 50px;
   margin-left: 15vw;
 }
