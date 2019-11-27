@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 const NFLteamPlayer = () => {
@@ -18,9 +19,21 @@ const NFLteamPlayer = () => {
 
   return(
       <div>
-        {console.log(player)}
-        <p>{player.strPlayer}</p>
-        <p>{player.strDescriptionEN}</p>
+        <div className='playerCont'>
+          <div>
+            <img src={player.strThumb} alt='' className='playerImg'/>
+          </div>
+          <div className='playerInfo'>
+            <h1>{player.strPlayer}</h1>
+            <Link to={`/team/${player.idTeam}`}>
+              <h3>{player.strTeam}</h3>
+            </Link>
+            <p>{player.strPosition}</p>
+            <p>{player.strHeight}</p>
+            <p>{player.strWeight}</p>
+          </div>
+        </div>
+        <p className='playerDes'>{player.strDescriptionEN}</p>
       </div>
   )
 }

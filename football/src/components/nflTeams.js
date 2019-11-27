@@ -6,6 +6,12 @@ import NFLteamPlayer from './nflPlayer'
 const NFLteams = props => {
     return(
         <div>
+            <Route path='/'>
+                <Link to='/'>
+                    <h1 className='header'>NFL</h1>
+                </Link>
+            </Route>
+
             <Route exact path='/'>
             {props.teams.map(team => (
                 <Link to={`/team/${team.idTeam}`}  key={team.idTeam}>
