@@ -19,7 +19,7 @@ const NFLteamPlayer = () => {
 
   return(
       <div>
-        <div className='playerCont'>
+        <div className='playerPageCont'>
           <div>
             <img src={player.strThumb} alt='' className='playerImg'/>
           </div>

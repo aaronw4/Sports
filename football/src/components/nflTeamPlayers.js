@@ -17,15 +17,17 @@ const NFLteamPlayers = () => {
     fetchData();
   }, [id]);
     return(
-        <div className='playersCont'>
-            <h3>Team</h3>
-            {players.map(player => (
-                <Link to={`/player/${player.idPlayer}`} key={player.idPlayer}>
-                    <div key={player.idPlayer} className='players'>
-                        <p className='player'>{player.strPlayer}: {player.strPosition} {player.idPlayer}</p>
-                    </div>
-                </Link>
-            ))}
+        <div className='playersCont teamPageDes'>
+            <h3>Players</h3>
+            <div className='playerCont'>
+                {players.map(player => (
+                    <Link to={`/player/${player.idPlayer}`} key={player.idPlayer}>
+                        <div key={player.idPlayer} className='players'>
+                            <p className='player'>{player.strPlayer}: {player.strPosition}</p>
+                        </div>
+                    </Link>
+                ))}
+            </div>
         </div>
     )
 }

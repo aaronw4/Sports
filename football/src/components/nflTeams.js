@@ -2,9 +2,10 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import NFLteamPlayers from './nflTeamPlayers';
 import {Route, Link} from 'react-router-dom';
-import NFLteamPlayer from './nflPlayer'
+import NFLteamPlayer from './nflPlayer';
+import NFLteam from './nflTeam';
 
-const NFLteams = props => {
+const NFLteams = () => {
 const [teams, setTeams] = useState([]);
 
   useEffect(() => {
@@ -31,9 +32,8 @@ const [teams, setTeams] = useState([]);
                     {teams.map(team => (
                         <Link to={`/team/${team.idTeam}`}  key={team.idTeam}>
                             <div key={team.strTeamShort} className='teamCont'>
-                    {console.log(team)}
                                 <img src={team.strTeamBadge} alt={team.strTeamShort} className='teamBadge'/>
-                                <p>{team.strTeam}</p>
+                                <p className='teamName'>{team.strTeam}</p>
                             </div>
                         </Link>
                     ))}
@@ -41,7 +41,7 @@ const [teams, setTeams] = useState([]);
             </Route>
 
             <Route path='/team/:id'>               
-                <NFLteamPlayers/>                             
+                <NFLteam/>                             
             </Route>
 
             <Route path='/player/:id'>
