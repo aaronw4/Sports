@@ -4,9 +4,23 @@ body {
 }
 .header {
   text-align: center;
-  color: white;
+  color: #D50A0A;
 }
-.players {
+.teamsCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px;
+}
+.teamCont {
+  width: 100px;
+  margin: 20px;
+}
+.teamBadge {
+  width: 5vw;
+}
+.playersCont a, .teamsCont a, .playerInfo a{
+  text-decoration: none;
   color: white;
 }
 .playerCont {
@@ -21,10 +35,6 @@ body {
 .playerInfo {
   line-height: 0.3;
   margin-top: 50px;
-}
-.playerInfo a {
-  color: white;
-  text-decoration: none;
 }
 .playerInfo h1 {
   text-decoration: underline;

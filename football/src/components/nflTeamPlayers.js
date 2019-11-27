@@ -17,11 +17,12 @@ const NFLteamPlayers = () => {
     fetchData();
   }, [id]);
     return(
-        <div>
+        <div className='playersCont'>
+            <h3>Team</h3>
             {players.map(player => (
                 <Link to={`/player/${player.idPlayer}`} key={player.idPlayer}>
                     <div key={player.idPlayer} className='players'>
-                        <p>{player.strPlayer}: {player.strPosition} {player.idPlayer}</p>
+                        <p className='player'>{player.strPlayer}: {player.strPosition} {player.idPlayer}</p>
                     </div>
                 </Link>
             ))}
