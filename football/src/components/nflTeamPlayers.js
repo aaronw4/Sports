@@ -18,7 +18,8 @@ const NFLteamPlayers = () => {
   }, [id]);
     return(
         <div className='playersCont teamPageDes'>
-            <h3>Players</h3>
+            <h2>Players</h2>
+            <h5>(Click on Player for Player Information)</h5>
             <div className='playerCont'>
                 {players.map(player => (
                     <Link to={`/player/${player.idPlayer}`} key={player.idPlayer}>

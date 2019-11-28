@@ -21,9 +21,11 @@ const [teams, setTeams] = useState([]);
     return(
         <div>
             <Route path='/'>
-                <Link to='/'>
-                    <h1 className='header'>NFL</h1>
-                </Link>
+                <div className='headerCont'>
+                    <Link to='/'>
+                        <h1 className='header'>NFL</h1>
+                    </Link>
+                </div>
             </Route>
 
             <Route exact path='/' >

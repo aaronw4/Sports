@@ -1,16 +1,22 @@
 body {
   background: #013369;
   color: white;
+  font-size: 16px;
+}
+.headerCont a{
+  text-decoration: none;
 }
 .header {
   text-align: center;
   color: #D50A0A;
+  font-size: 4rem;
+  text-decoration: underline;
 }
 .teamsCont {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px;
+  margin: 0 100px 100px 100px;
   line-height: 1;
 }
 .teamCont {
@@ -49,9 +55,14 @@ body {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.playersCont h3 {
+.playersCont h2 {
   text-align: center;
   margin-top: 50px;
+  line-height: 0;
+}
+.playersCont h5 {
+  text-align: center;
+  line-height: 0.5;
 }
 .players {
   width: 300px;
