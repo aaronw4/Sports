@@ -29,6 +29,17 @@ body {
 .teamName {
   margin: 5px 0;
 }
+@media (max-width: 500px) {
+  .teamsCont {
+    margin: 0 5px;
+  }
+  .teamCont {
+    margin: 20px 0;
+  }
+  .teamBadge {
+    width: 10vw;
+  }
+}
 .teamBannerImg {
   width: 70vw;
   height: auto;
@@ -91,4 +102,20 @@ body {
   margin-left: auto;
   margin-right: auto;  
   margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .playerPageCont {
+    flex-direction: column;
+    align-items: center;
+  }
+  .playerImg {
+    width: 80vw;
+    margin: 0;
+  }
+  .playerInfo {
+    margin-top: 0;
+  }
+  .playerDes {
+    width: 80%;
+  }
 }
