@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import NFLteamPlayers from './nflTeamPlayers';
 import {Route, Link} from 'react-router-dom';
 import NFLteamPlayer from './nflPlayer';
 import NFLteam from './nflTeam';
