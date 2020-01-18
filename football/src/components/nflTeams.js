@@ -5,17 +5,17 @@ import NFLteamPlayer from './nflPlayer';
 import NFLteam from './nflTeam';
 
 const NFLteams = () => {
-const [teams, setTeams] = useState([]);
+    const [teams, setTeams] = useState([]);
 
-  useEffect(() => {
-    function fetchData() {
-    axios
-    .get('https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=NFL')
-    .then(info => setTeams(info.data.teams))
-    .catch(err => console.log(err));
-    }
-    fetchData();
-  }, []);
+    useEffect(() => {
+        function fetchData() {
+            axios
+                .get('https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=NFL')
+                .then(info => setTeams(info.data.teams))
+                .catch(err => console.log(err));
+        }
+        fetchData();
+    }, []);
   
 
     return(
