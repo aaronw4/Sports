@@ -3325,6 +3325,13 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
+css-blank-pseudo@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/css-blank-pseudo/-/css-blank-pseudo-1.0.0.tgz#8fd2204d2945de29425d3eee22d848eab9de50bd"
+  integrity sha512-Qg/fy3RoLHVjgwbY6E9xstXF+Lao6HxoOHMU1Y/1U45WLhdPWfmUiBOtQeT9hoj9W+2TDvQCdSamwqvBkXY5lQ==
+  dependencies:
+    postcss "^7.0.17"
+
 css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
