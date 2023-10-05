@@ -22,7 +22,7 @@
     "node-notifier": "^10.0.0",
     "nth-check": "^2.0.1",
     "object-path": "^0.11.8",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.31",
     "postcss-colormin": "^5.2.4",
     "postcss-merge-rules": "^5.0.5",
     "react": "^16.12.0",
